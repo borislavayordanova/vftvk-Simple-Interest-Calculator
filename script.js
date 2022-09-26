@@ -21,7 +21,7 @@ function compute()
 
         document.getElementById("result").innerHTML=
         `If you deposit ${setFontColorToYellow(principal)} at an interest rate of `
-        +`${setFontColorToYellow(rate)}% You will receive an amount of `
+        +`${setFontColorToYellow(rate)} You will receive an amount of `
         +`${setFontColorToYellow(interest)} in the year `
         +`${setFontColorToYellow(year)}`;
     }
