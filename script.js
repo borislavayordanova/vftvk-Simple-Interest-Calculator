@@ -20,16 +20,16 @@ function compute()
         var year = new Date().getFullYear()+parseInt(years);
 
         document.getElementById("result").innerHTML=
-        `If you deposit ${setFontColorToYellow(principal)} at an interest rate of `
-        +`${setFontColorToYellow(rate)} You will receive an amount of `
-        +`${setFontColorToYellow(interest)} in the year `
-        +`${setFontColorToYellow(year)}`;
+        `If you deposit ${setFontColorToYellow(principal)}\<br\> at an interest rate of `
+        +`${setFontColorToYellow(`${rate}%`)}.\<br\> You will receive an amount of `
+        +`${setFontColorToYellow(interest)},\<br\> in the year `
+        +`${setFontColorToYellow(year)}\<br\>`;
     }
 }
 
 function setFontColorToYellow(element)
 {
-    return `<span style="color:#FFC300">${element}</span>\<br\>`
+    return `<mark>${element}</mark>`;
 }
 
 function updateRate()
