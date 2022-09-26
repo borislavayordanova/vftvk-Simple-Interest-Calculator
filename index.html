@@ -9,7 +9,7 @@
     <div class="maindiv">
         <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number" id="principal" onchange="validateInput()" > <br/>
+        Amount <input type="number" id="principal" onchange="isInputValid()"> <br/>
 
         Rate <input type="range" id="rate" min="1" max="20" step="0.25" value="10.25" onchange="updateRate()" >
         <span id="rate_val"></span><br/>
@@ -21,9 +21,8 @@
         <button onclick="compute()">Compute Interest</button>
         <span id="result"></span><br>
         <footer>
-            &#169; This Calculator belongs to Borislava Yordanova
+            &#169; Everyone Can Get Rich
         </footer>
     </div>
-
 </body>
 </html>
